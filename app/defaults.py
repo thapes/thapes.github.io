@@ -64,28 +64,23 @@ Project are a list of lists, where each sublist refers to a specific project,
 and is of the form:
     ['Title', 'Description', 'Link to project webpage']
 """
-project_intro = '<p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>'
+project_intro = '<p>All the projects listed below were professional projects and due to security reasons cannot be shared details about the code or the data used. </p>'
 projects = [
-        ['Velocity',
-            'A responsive website template designed to help startups promote, market and sell their products.',
-            '#hook'
+        ['Slack bot',
+            'The Slack Bot was designed and created with the goal of submiting alerts for specific queues, groups and users depending on the need. Also, the bot awas able to apply changes in different applications.'
         ],
-        ['DevStudio',
-            'A responsive website template designed to help startups promote, market and sell their products.',
-            'http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/'
+        ['SLA Alert',
+            'The SLA Alert was the first and most important project developed. In this project, was firstly mapped all queues globally impacted and designed an alert to be submitted in certain situations and to specific groups depending on the requirements.'
         ],
-        ['Tempo',
-            'A responsive website template designed to help startups promote their products or services and to attract users &amp; investors.',
-            'http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/'
+        ['Data visualization',
+            'This project was developed as a complement to the SLA Alert. The goal was to implement a logger inside the alert to collect all data needed and then utilize to create reports with meaningful information to the management team.'
         ],
-        ['Atom',
-            'A comprehensive website template solution for startups/developers to market their mobile apps.',
-            'http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/'
+        ['Customer attrition',
+            'The Customer attrition project was a ML project developed to understand reasons that could cause a client to drop from the service. Was used internal data to feed the ML algorithm and created a report with the output info.'
         ],
-        ['Delta',
-            'A responsive Bootstrap one page theme designed to help app developers promote their mobile apps.',
-            'http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/'
-        ]
+        ['Server Migration',
+            'The server migration was a cross-team project with the goal of migrating existent services and tools from an external server to an internal one. In order to complete the project was needed to refactor some parts of the code and also create new functions to adapt the existent services in the new server.'
+        ],
     ]
 
 
@@ -97,7 +92,7 @@ This dictionary puts everything together. It will be read by the Flask app when
 it is instantiated.
 """
 default_data = {
-    'site_title' : 'Responsive Resume/CV Template for Developers',
+    'site_title' : 'Resume/CV',
     'name' : 'Thales Stuczynski',
     'tagline' : 'Python Developer',
     'email' : 'stuczynski.thales@gmail.com',
